@@ -1,6 +1,6 @@
 <!doctype HTML>
 <html>
-<body onbeforeunload="return myFunction()">
+<body onbeforeunload="return function1()">
 <title>Classes</title>
  <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
   <script>bubbly({
@@ -8,6 +8,9 @@
   colorStop: '#1a001a',
   bubbleFunc:() => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`
 });</script>
+<script> function function1(){
+return " "
+}
 <style>
 body {
   margin: 0;
@@ -35,9 +38,11 @@ body {
 
 .topnav a.active {
   background-color: #ddd;
-  color: white;
+  color: grey;
 }
 </style>
-
+<div class="topnav">
+  <a class="active" href="/Hallowed">Home</a>
+  <a class="active" href="/Hallowed/goguardian-unblocker">Goguardian Unblocker</a>
 </body>
 </html>
